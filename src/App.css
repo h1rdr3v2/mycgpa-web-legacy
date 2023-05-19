@@ -38,10 +38,11 @@
     overflow-y: scroll;
 }
 .calcbtn{
+    color: #fff;
     padding: 4% 8%;
     background-color: var(--primary-color);
     border: none;
     font-style: bold;
     border-radius: 8px;
-    --webkit-appearance: none;
+    -webkit-appearance: none;
 }
