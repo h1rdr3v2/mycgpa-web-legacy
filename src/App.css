@@ -1,9 +1,9 @@
 #root {
-  max-width: 400px;
-  width: 393px;
-  margin: 0 auto;
-  text-align: center;
-  height: 100%;
+    max-width: 400px;
+    width: 393px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
 }
 .head{
     display: flex;
@@ -16,10 +16,29 @@
     height: 39px;
 }
 .actionArea{
-    height: 80%;
+    height: 83%;
     width: 95%;
     background-color: white;
     border-radius: 20px;
     margin: 0 auto;
-    margin-top: 43px;
+    margin-top: 25px;
+}
+.addCourse{
+    display: flex;
+    float: left;
+    margin: 11px 14px;
+}
+.courses{
+    display: inline-flex;
+    background-color: green;
+    height: 75%;
+    width: 90%;
+    margin: 10px auto 15px auto;
+}
+.calcbtn{
+    padding: 14px 20px;
+    background-color: var(--primary-color);
+    border: none;
+    font-style: bold;
+    border-radius: 8px;
 }
