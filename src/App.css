@@ -33,6 +33,9 @@
     height: 68%;
     width: 90%;
     margin: 20px auto;
+    overflow: hidden;
+    color: black;
+    overflow-y: scroll;
 }
 .calcbtn{
     padding: 14px 20px;

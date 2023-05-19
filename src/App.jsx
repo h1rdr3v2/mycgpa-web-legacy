@@ -39,7 +39,92 @@ function App() {
 						/>
 					</svg>
 				</span>
-				<div className="courses"></div>
+				<div className="courses">
+					<div className="course_1">
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+					</div>
+					<div className="course_1">
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+					</div>
+					<div className="course_1">
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+					</div>
+					<div className="course_1">
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+					</div>
+					<div className="course_1">
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+					</div>
+					<div className="course_1">
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+					</div>
+					<div className="course_1">
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+						<p>Lorem ipsum </p>
+					</div>
+				</div>
 				<div className="foot">
 					<input
 						className="calcbtn"

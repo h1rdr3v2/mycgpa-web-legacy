@@ -14,9 +14,9 @@
   -webkit-text-size-adjust: 100%;
   --primary-color: #001A64;
 }
-/* *{
+*{
     outline: 1px solid black;
-} */
+}
 body {
   margin: 0;
   display: flex;
