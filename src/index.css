@@ -13,9 +13,9 @@
     --primary-color: #001A64;
     --webkit-appearance: none;
 }
-*{
+/* *{
     outline: 1px solid black;
-}
+} */
 body {
   margin: 0;
   display: flex;
