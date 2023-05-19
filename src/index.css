@@ -5,8 +5,6 @@
 
     -webkit-text-size-adjust: 100%;
     --primary-color: #001A64;
-    -webkit-appearance: none;
-    appearance: none;
 }
 *{
     outline: 1px solid black;

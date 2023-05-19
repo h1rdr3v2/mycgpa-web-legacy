@@ -44,4 +44,6 @@
     border: none;
     font-style: bold;
     border-radius: 8px;
+    -webkit-appearance: none;
+        appearance: none;
 }
