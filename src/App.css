@@ -30,10 +30,9 @@
 }
 .courses{
     display: inline-flex;
-    background-color: green;
-    height: 75%;
+    height: 68%;
     width: 90%;
-    margin: 10px auto 15px auto;
+    margin: 20px auto;
 }
 .calcbtn{
     padding: 14px 20px;
