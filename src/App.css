@@ -1,6 +1,6 @@
 #root {
-  max-width: 1280px;
-  width: 520px;
+  max-width: 400px;
+  width: 393px;
   margin: 0 auto;
   text-align: center;
   height: 100%;
@@ -15,7 +15,7 @@
     height: 35px;
 }
 .actionArea{
-    height: 75%;
+    height: 80%;
     width: 95%;
     background-color: white;
     border-radius: 20px;
