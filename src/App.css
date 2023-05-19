@@ -38,7 +38,7 @@
     overflow-y: scroll;
 }
 .calcbtn{
-    padding: 14px 20px;
+    padding: 5% 8%;
     background-color: var(--primary-color);
     border: none;
     font-style: bold;
