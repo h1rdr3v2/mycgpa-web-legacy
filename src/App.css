@@ -9,10 +9,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 5px;
 }
 .fil-right{
-    width: 35px;
-    height: 35px;
+    width: 39px;
+    height: 39px;
 }
 .actionArea{
     height: 80%;
