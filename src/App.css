@@ -29,7 +29,7 @@
     margin: 11px 14px;
 }
 .courses{
-    display: inline-flex;
+    display: inline-block;
     height: 68%;
     width: 90%;
     margin: 20px auto;
@@ -38,7 +38,24 @@
     overflow-y: scroll;
 }
 
-.calcbtn{
+.course-tagname{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 24px;;
+}
+.course-details{
+    display: inline-flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.course--input{
+    width: 100%;
+    height: 40px;
+}
+
+.calcbtn {
     color: #fff;
     padding: 4% 8%;
     background-color: var(--primary-color);

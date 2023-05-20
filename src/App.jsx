@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Logo from "./assets/logo.png"
+// import Calculate from
 import "./App.css"
 
 function App() {
@@ -41,88 +42,44 @@ function App() {
 				</span>
 				<div className="courses">
 					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
+						<h3 className="course-tagname">course 1</h3>
+						<div className="course-details container">
+							<input
+								type="text"
+								className="course--input"
+								placeholder="Course Name"
+							/>
+							<input
+								type="text"
+								className="course--input"
+								placeholder="Grade Scored"
+							/>
+							<input
+								type="text"
+								className="course--input"
+								placeholder="Credit Load"
+							/>
+						</div>
 					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
+					<div className="course_2">
+						<h3 className="course-tagname">course 2</h3>
+						<div className="course-details container">
+							<input
+								type="text"
+								className="course--input"
+								placeholder="Course Name"
+							/>
+							<input
+								type="text"
+								className="course--input"
+								placeholder="Grade Scored"
+							/>
+							<input
+								type="text"
+								className="course--input"
+								placeholder="Credit Load"
+							/>
+						</div>
 					</div>
 				</div>
 				<div className="foot">
@@ -130,6 +87,7 @@ function App() {
 						className="calcbtn"
 						type="submit"
 						value="CALCULATE"
+						// onSubmit={calculate()}
 					/>
 				</div>
 			</div>
