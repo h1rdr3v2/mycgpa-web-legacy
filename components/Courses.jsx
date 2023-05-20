@@ -1,37 +1,56 @@
-import { React, useState } from "react"
+import React, { useState } from "react"
 
 export default function Courses() {
-	const [courseCount, setCourseCount] = useState(2)
-	const [courseContainers, setCourseContainers] = useState([])
-	const handleChange = (e) => {
-		e.target.value = e.target.value.toUpperCase()
+	const newCourseData = {
+		courseName: "",
+		grade: "",
+		creditLoad: 0,
 	}
-	const inputRows = (type, placeholder, change = false, pattern = null) => {
+	const [courseCount, setCourseCount] = useState(1)
+	const [courseContainers, setCourseContainers] = useState([])
+	const [formData, setFormData] = useState([newCourseData])
+	const inputRows = (type, placeholder, onChange, pattern = null) => {
 		return (
 			<input
 				type={type}
 				className="course--input"
 				placeholder={placeholder}
 				pattern={pattern}
-				onChange={change ? handleChange : null}
+				onChange={onChange}
 				required
 			/>
 		)
 	}
-
+	const handleInputChange = (index, field, e) => {
+		e.target.value = e.target.value.toUpperCase()
+		const { value } = e.target
+		setFormData((prevFormData) => {
+			const updatedFormData = [...prevFormData]
+			updatedFormData[index][field] = value
+			return updatedFormData
+		})
+	}
 	const addCourse = () => {
-		const courseName = "Course " + courseCount
-
+		const courseName = "Course " + (courseCount + 1)
 		const courseContainer = (
 			<div
-				key={`course_${courseCount}`}
-				className={`course_${courseCount}`}
+				key={`course_${courseCount + 1}`}
+				className={`course_${courseCount + 1}`}
 			>
 				<h3 className="course-tagname">{courseName}</h3>
 				<div className="course-details container">
-					{inputRows("text", "Course Name", true)}
-					{inputRows("text", "Grade Scored A-F", true, "[a-fA-F]{1}")}
-					{inputRows("number", "Credit Load")}
+					{inputRows("text", "Course Name", (e) => {
+						handleInputChange(courseCount, "courseName", e)
+					})}
+					{inputRows(
+						"text",
+						"Grade Scored A-F",
+						(e) => handleInputChange(courseCount, "grade", e),
+						"[a-fA-F]{1}"
+					)}
+					{inputRows("number", "Credit Load", (e) =>
+						handleInputChange(courseCount, "creditLoad", e)
+					)}
 				</div>
 			</div>
 		)
@@ -41,6 +60,10 @@ export default function Courses() {
 			...prevContainers,
 			courseContainer,
 		])
+		setFormData((prevFormData) => [...prevFormData, newCourseData])
+	}
+	const calculateGPA = () => {
+		console.log(formData)
 	}
 	return (
 		<>
@@ -66,22 +89,27 @@ export default function Courses() {
 							type="text"
 							className="course--input"
 							placeholder="Course Name"
-							onChange={handleChange}
+							onChange={(e) =>
+								handleInputChange(0, "courseName", e)
+							}
 						/>
 						<input
 							type="text"
 							className="course--input"
 							placeholder="Grade Scored"
-							onChange={handleChange}
+							onChange={(e) => handleInputChange(0, "grade", e)}
+							pattern="[a-fA-F]{1}"
 						/>
 						<input
 							type="text"
 							className="course--input"
 							placeholder="Credit Load"
+							onChange={(e) =>
+								handleInputChange(0, "creditLoad", e)
+							}
 						/>
 					</div>
 				</div>
-
 				{courseContainers}
 			</div>
 			<div className="foot">
@@ -89,7 +117,7 @@ export default function Courses() {
 					className="calcbtn"
 					type="submit"
 					value="CALCULATE"
-					// onSubmit={calculate()}
+					onClick={calculateGPA}
 				/>
 			</div>
 		</>

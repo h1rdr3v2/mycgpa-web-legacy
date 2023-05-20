@@ -1,5 +1,6 @@
 import Logo from "./assets/logo.png"
 import Courses from "../components/Courses"
+import { Routes, Route, Link } from "react-router-dom"
 
 import "./App.css"
 
@@ -24,7 +25,9 @@ function App() {
 				</span>
 			</div>
 			<div className="actionArea">
-				<Courses />
+				<Routes>
+					<Route path="/" element={<Courses />} />
+				</Routes>
 			</div>
 		</>
 	)
