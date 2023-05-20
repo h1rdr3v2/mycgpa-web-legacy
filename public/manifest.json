@@ -3,7 +3,7 @@
 	"short_name": "MyGPA",
 	"icons": [
 		{
-			"src": "./assets/icon.png",
+			"src": "./icon.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		}
