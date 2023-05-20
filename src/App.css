@@ -67,6 +67,7 @@
 }
 .results{
     color: black;
+    height: 100%;
 }
 .results--header{
     display: inline-flex;
@@ -78,4 +79,21 @@
     color: #fff;
     left: -1px;
     background-color: var(--primary-color);
+}
+.results--footer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+table,
+th,
+td {
+    border: 1px solid black;
+}
+table{
+    width: 100%;
 }
