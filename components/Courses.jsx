@@ -101,7 +101,7 @@ export default function Courses({ onCourseData }) {
 						<input
 							type="text"
 							className="course--input"
-							placeholder="Grade Scored"
+							placeholder="Grade Scored A-F"
 							onChange={(e) => handleInputChange(0, "grade", e)}
 							pattern="[a-fA-F]{1}"
 							required
