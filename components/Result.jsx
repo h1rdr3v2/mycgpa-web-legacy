@@ -5,6 +5,10 @@ export default function Result({ courseData }) {
 	const GoBack = () => {
 		navigate("/")
 	}
+	console.log(courseData, courseData.length)
+	if (courseData.length == 0) {
+		GoBack()
+	}
 	const gpController = (data) => {
 		// Solve for it
 		let [tcl, totalpoints, cgp, results] = [0, 0, 0, courseData]

@@ -15,7 +15,7 @@ function App() {
 		<>
 			<div className="head">
 				<img src={Logo} width={142} height={69} alt="logo" />
-				<span className="fil-right">
+				{/* <span className="fil-right">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 20 20"
@@ -28,7 +28,7 @@ function App() {
 							clipRule="evenodd"
 						/>
 					</svg>
-				</span>
+				</span> */}
 			</div>
 			<div className="actionArea">
 				<Routes>

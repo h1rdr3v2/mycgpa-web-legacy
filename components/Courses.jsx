@@ -64,12 +64,13 @@ export default function Courses({ onCourseData }) {
 		])
 		setFormData((prevFormData) => [...prevFormData, newCourseData])
 	}
-	const calculateGPA = () => {
+	const calculateGPA = (e) => {
+		e.preventDefault()
 		onCourseData(formData)
 		navigate("/result")
 	}
 	return (
-		<>
+		<form className="phone" onSubmit={calculateGPA}>
 			<span className="addCourse" onClick={addCourse}>
 				<svg
 					width="37"
@@ -95,6 +96,7 @@ export default function Courses({ onCourseData }) {
 							onChange={(e) =>
 								handleInputChange(0, "courseName", e)
 							}
+							required
 						/>
 						<input
 							type="text"
@@ -102,6 +104,7 @@ export default function Courses({ onCourseData }) {
 							placeholder="Grade Scored"
 							onChange={(e) => handleInputChange(0, "grade", e)}
 							pattern="[a-fA-F]{1}"
+							required
 						/>
 						<input
 							type="number"
@@ -110,19 +113,15 @@ export default function Courses({ onCourseData }) {
 							onChange={(e) =>
 								handleInputChange(0, "creditLoad", e)
 							}
+							required
 						/>
 					</div>
 				</div>
 				{courseContainers}
 			</div>
 			<div className="foot">
-				<input
-					className="calcbtn"
-					type="submit"
-					value="CALCULATE"
-					onClick={calculateGPA}
-				/>
+				<input className="calcbtn" type="submit" value="CALCULATE" />
 			</div>
-		</>
+		</form>
 	)
 }
