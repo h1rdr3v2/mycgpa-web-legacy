@@ -1,7 +1,7 @@
 // service-worker.js
 
 const CACHE_NAME = "my-gpa-cache-v1"
-const urlsToCache = ["/", "icon.png"]
+const urlsToCache = ["/", "/result", "icon.png"]
 
 self.addEventListener("install", (event) => {
 	event.waitUntil(
