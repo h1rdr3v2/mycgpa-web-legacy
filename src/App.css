@@ -65,3 +65,15 @@
     -webkit-appearance: none;
     appearance: none;
 }
+.results{
+    color: black;
+}
+.results--header{
+    display: inline-flex;
+    padding: 15px 0;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    width:100%;
+    color: #fff;
+    background-color: var(--primary-color);
+}

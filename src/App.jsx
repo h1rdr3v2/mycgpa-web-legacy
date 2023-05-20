@@ -1,10 +1,16 @@
 import Logo from "./assets/logo.png"
 import Courses from "../components/Courses"
+import Result from "../components/Result"
 import { Routes, Route, Link } from "react-router-dom"
+import { useState } from "react"
 
 import "./App.css"
 
 function App() {
+	const [courseData, setCourseData] = useState([])
+	const handleCourseData = (data) => {
+		setCourseData(data)
+	}
 	return (
 		<>
 			<div className="head">
@@ -26,7 +32,14 @@ function App() {
 			</div>
 			<div className="actionArea">
 				<Routes>
-					<Route path="/" element={<Courses />} />
+					<Route
+						path="/"
+						element={<Courses onCourseData={handleCourseData} />}
+					/>
+					<Route
+						path="/:id"
+						element={<Result courseData={courseData} />}
+					/>
 				</Routes>
 			</div>
 		</>

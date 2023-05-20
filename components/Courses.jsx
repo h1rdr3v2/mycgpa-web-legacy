@@ -1,11 +1,13 @@
 import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
-export default function Courses() {
+export default function Courses({ onCourseData }) {
 	const newCourseData = {
 		courseName: "",
 		grade: "",
 		creditLoad: 0,
 	}
+	const navigate = useNavigate()
 	const [courseCount, setCourseCount] = useState(1)
 	const [courseContainers, setCourseContainers] = useState([])
 	const [formData, setFormData] = useState([newCourseData])
@@ -63,7 +65,8 @@ export default function Courses() {
 		setFormData((prevFormData) => [...prevFormData, newCourseData])
 	}
 	const calculateGPA = () => {
-		console.log(formData)
+		onCourseData(formData)
+		navigate("/result")
 	}
 	return (
 		<>
@@ -101,7 +104,7 @@ export default function Courses() {
 							pattern="[a-fA-F]{1}"
 						/>
 						<input
-							type="text"
+							type="number"
 							className="course--input"
 							placeholder="Credit Load"
 							onChange={(e) =>
