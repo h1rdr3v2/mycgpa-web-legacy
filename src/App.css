@@ -70,10 +70,12 @@
 }
 .results--header{
     display: inline-flex;
+    position: relative;
     padding: 15px 0;
     justify-content: space-evenly;
     margin-top: 25px;
-    width:102%;
+    width: 101%;
     color: #fff;
+    left: -1px;
     background-color: var(--primary-color);
 }
