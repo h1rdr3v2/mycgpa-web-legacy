@@ -1,0 +1,15 @@
+{
+	"name": "MyGPA By Bleon",
+	"short_name": "MyGPA",
+	"icons": [
+		{
+			"src": "./assets/icon.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/",
+	"display": "standalone",
+	"theme_color": "#001A64",
+	"background_color": "#ffffff"
+}
