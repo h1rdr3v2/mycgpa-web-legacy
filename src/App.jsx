@@ -39,92 +39,32 @@ function App() {
 						/>
 					</svg>
 				</span>
+
 				<div className="courses">
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
+				 	<div className= "course_1"> 
+						<h3 className= "course--tagname">course 1</h3>
+						<div className="course-details containers">
+							<input type="text" className="course--input" placeholder="Course Name"/>
+
+							<input type="text" className="course--input"placeholder="Grade Score" />
+
+							<input type="text" className="course--input" placeholder="Credit Load"/>
+						</div>
 					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-					</div>
-					<div className="course_1">
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
-						<p>Lorem ipsum </p>
+
+					<div className= "course_1"> 
+						<h3 className= "course--tagname">course 2</h3>
+						<div className="course-details containers">
+							<input type="text" className="course--input" placeholder="Course Name"/>
+
+							<input type="text" className="course--input"placeholder="Grade Score" />
+
+							<input type="text" className="course--input" placeholder="Credit Load"/>
+						</div>
 					</div>
 				</div>
+									
+				
 				<div className="foot">
 					<input
 						className="calcbtn"
