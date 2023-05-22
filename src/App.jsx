@@ -1,7 +1,7 @@
-import Logo from "./assets/logo.png"
+import Logo from "/logo.png"
 import Courses from "../components/Courses"
 import Result from "../components/Result"
-import { Routes, Route, Link } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import { useState } from "react"
 
 import "./App.css"
