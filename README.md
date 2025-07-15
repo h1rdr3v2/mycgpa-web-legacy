@@ -68,4 +68,4 @@ This simple web application proved the concept and validated the need for a dedi
 
 ---
 
-**Note**: For the current and actively maintained version of MyCGPA, please download our mobile app from the iOS App Store or Google Play Store.
+**Note**: For the current and actively maintained version of MyCGPA, please download our mobile app from the [iOS App Store](https://apps.apple.com/ng/app/mycgpa/id6450861410) or [Google Play Store](https://play.google.com/store/apps/details?id=com.mycgpa&pcampaignid=web_share).
